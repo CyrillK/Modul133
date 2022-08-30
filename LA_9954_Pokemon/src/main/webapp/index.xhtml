@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      >
+    <h:head>
+        <title>Pokemon</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:outputText value ="Wähle deinen Look aus. Klicke auf eines der Bilder."/><br/><br/>
+            <h:commandLink value="#{managedBean.haut}" action="augen.xhtml" >
+                <h:graphicImage library="img" name="d.png"/><f:setPropertyActionListener target="#{managedBean.haut}" value="d"></f:setPropertyActionListener>
+            </h:commandLink>
+            <h:commandLink value="#{managedBean.haut}" action="augen.xhtml">
+                <h:graphicImage library="img" name="h.png" /> <f:setPropertyActionListener target="#{managedBean.haut}" value="h"></f:setPropertyActionListener>  
+            </h:commandLink>
+            
+        </h:form>
+
+    </h:body>
+</html>
+
